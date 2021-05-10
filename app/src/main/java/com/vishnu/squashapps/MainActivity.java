@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     RecyclerView recyclerView, recyclerView1;
     LinearLayout lL_videos, lL_liked;
-    ImageView imgVw_morePopUp;
+    ImageView imgVw_morePopUp, img_back;
     ItemListAdapter itemListAdapter;
     ItemListSecondAdapter itemListSecondAdapter;
     private List<ItemList> itemList = new ArrayList<>();
@@ -40,10 +40,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         imgVw_morePopUp = findViewById(R.id.imgVw_morePopUp);
         imgVw_morePopUp.setOnClickListener(this);
 
+        img_back = findViewById(R.id.img_back);
+        img_back.setOnClickListener(this);
+
         lL_videos = findViewById(R.id.lL_videos);
         lL_videos.setOnClickListener(this);
         lL_liked = findViewById(R.id.lL_liked);
         lL_liked.setOnClickListener(this);
+
 
         recyclerView = findViewById(R.id.recyclerView);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this,RecyclerView.HORIZONTAL,false);
@@ -104,6 +108,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.lL_liked:
                 lL_liked.setAlpha(1);
                 lL_videos.setAlpha((float) 0.3);
+
+            case R.id.img_back:
+                finish();
+                break;
 
             default:
                 break;
