@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_112sdp"
+    android:layout_height="@dimen/_140sdp"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/imgVw"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_140sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/image1"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgVw_eye"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:src="@drawable/ic_eye"/>
+
+        <TextView
+            android:id="@+id/txtVw_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imgVw_eye"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="1000"/>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

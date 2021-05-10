@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SquashApps</string>
+    <string name="email" translatable="false">/@eleanor333</string>
+    <string name="description">Persons bio data \nLorem ipsum dolor sit amet, cons</string>
+</resources>
