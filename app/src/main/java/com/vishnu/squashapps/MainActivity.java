@@ -108,6 +108,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.lL_liked:
                 lL_liked.setAlpha(1);
                 lL_videos.setAlpha((float) 0.3);
+                break;
 
             case R.id.img_back:
                 finish();
